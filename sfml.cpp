@@ -1,11 +1,11 @@
-#include <SFML/Graphics.hpp>
-#include <time.h>
+#include "Game.hpp"
+#include "DEFINITIONS.hpp"
 
 using namespace sf;
 
 int main()
 {
-   srand(time(0));
+   /*srand(time(0));
 
    RenderWindow app(VideoMode(1080,720),"Frog Adventure");
    app.setFramerateLimit(600);
@@ -31,4 +31,7 @@ int main()
    }
 
    return 0;
+   */
+  TheFrog::Game(SCREEN_WIDTH,SCREEN_HEIGHT,"The Frog");
+  return EXIT_SUCCESS;
 }
